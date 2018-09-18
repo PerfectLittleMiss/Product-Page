@@ -1,0 +1,126 @@
+
+//variables
+$baseclr: #998675;
+$hbgclr: lighten(#998675, 5%);
+$bgclr: lighten(#998675, 30%);
+$bclr: #CCAC94;
+
+//down to ipad size
+@media (min-width: 750px) {
+	#header {
+
+		#header-img {
+			width: 20%;
+			min-width: 200px;
+			max-width: 250px;
+		}
+
+		nav {
+			width: 80%;
+			padding-right: 25px;
+			a {
+				font-size: 23px;
+				padding: 10px;
+			}
+		}
+	}
+
+	#video {
+		width: 60%;
+	}
+
+	#mission {
+		font-size: 25px;
+		width: 70%;
+	}
+}
+
+//down to phone size
+@media (max-width: 749px) {
+	#header {
+
+		#header-img {
+			width: 20%;
+			min-width: 150px;
+		}
+
+		nav {
+			width: 80%;
+			padding-right: 2px;
+			a {
+				font-size: 15px;
+				padding: 5px;
+			}
+		}
+	}
+
+	#video {
+		width: 80%;
+	}
+
+	#mission {
+		font-size: 20px;
+		width: 80%;
+	}
+}
+
+
+//default across sizes
+body {
+	margin: 0;
+	background-color: $bgclr;
+}
+
+#header {
+	width: 100%;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	background-color: $hbgclr;
+
+	#header-img {
+		height: auto;
+		display: inline;
+		padding: 5px;
+	}
+
+	nav {
+		display: inline;
+		text-align: right;
+
+		a {
+			color: black;
+			text-decoration: none;
+		}
+	}
+}
+
+#video {
+	height: auto;
+	margin: 0 auto;
+	display: block;
+	padding: 10px;
+	max-width: 600px;
+}
+
+#mission {
+	margin: 0 auto;
+	padding: 15px;
+	text-align: center;
+	border: 4px solid $bclr;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, .6);
+}
+
+#pricing {
+	display: flex;
+	align-items: row;
+	padding: 10px;
+}
+
+.item {
+	border: 2px solid $bclr;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 5px;
+}
