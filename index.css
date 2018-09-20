@@ -1,65 +1,10 @@
-@media (min-width: 750px) {
-  #header #header-img {
-    width: 20%;
-    min-width: 200px;
-    max-width: 250px; }
-  #header nav {
-    width: 80%;
-    padding-right: 25px; }
-    #header nav a {
-      font-size: 23px;
-      padding: 10px; }
-
-  #video {
-    width: 60%; }
-
-  #mission {
-    font-size: 25px;
-    width: 70%; } }
-@media (max-width: 749px) {
-  #header #header-img {
-    width: 20%;
-    min-width: 150px; }
-  #header nav {
-    width: 80%;
-    padding-right: 2px; }
-    #header nav a {
-      font-size: 15px;
-      padding: 5px; }
-
-  #video {
-    width: 80%; }
-
-  #mission {
-    font-size: 20px;
-    width: 80%; } }
-body {
-  margin: 0;
-  background-color: #dad3cd; }
-
-#header {
-  width: 100%;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  background-color: #a49384; }
-  #header #header-img {
-    height: auto;
-    display: inline;
-    padding: 5px; }
-  #header nav {
-    display: inline;
-    text-align: right; }
-    #header nav a {
-      color: black;
-      text-decoration: none; }
-
 #video {
   height: auto;
   margin: 0 auto;
   display: block;
-  padding: 10px;
-  max-width: 600px; }
+  max-width: 600px;
+  position: relative;
+  z-index: -10; }
 
 #mission {
   margin: 0 auto;
@@ -71,13 +16,55 @@ body {
 
 #pricing {
   display: flex;
-  align-items: row;
-  padding: 10px; }
+  padding: 10px;
+  text-align: center; }
 
 .item {
   border: 2px solid #CCAC94;
   border-radius: 5px;
   padding: 5px;
   margin: 5px; }
+
+#classic {
+  background-color: #dadada; }
+
+#modern {
+  background-color: #e5f3fc; }
+
+#electric {
+  background-color: #c0e3f1; }
+
+#newsletter {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 4px solid #CCAC94; }
+  #newsletter #form {
+    display: block;
+    margin: 0 auto;
+    text-align: center; }
+    #newsletter #form #email {
+      font-size: 16px;
+      background-color: aliceblue;
+      color: darkblue;
+      border: 2px silver solid; }
+    #newsletter #form #submit {
+      background-color: gold;
+      color: darkblue;
+      font-size: 16px;
+      border: 2px solid silver; }
+    #newsletter #form #submit:hover, #newsletter #form #email:hover {
+      font-size: 18px; }
+
+#footer {
+  background-color: #a49384;
+  padding: 15px;
+  margin: none;
+  margin-top: 15px;
+  text-align: center; }
+  #footer h5 {
+    font-size: 14px;
+    padding: 0;
+    margin: 0; }
 
 /*# sourceMappingURL=index.css.map */

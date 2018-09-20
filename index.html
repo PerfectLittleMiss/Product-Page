@@ -3,14 +3,83 @@
 <head>
 	<title>Typewriters R Us</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+
+	<style type="text/css">
+		@media (min-width: 750px) {
+  #header #header-img {
+    width: 20%;
+    min-width: 200px;
+    max-width: 250px; }
+  #header nav {
+    width: 80%;
+    padding-right: 25px; }
+    #header nav a {
+      font-size: 23px;
+      padding: 10px; }
+
+  #video {
+    width: 60%;
+    padding: 10px;
+    padding-top: 150px; }
+
+  #mission {
+    font-size: 25px;
+    width: 70%; }
+
+  #pricing {
+    flex-direction: row; } }
+@media (max-width: 749px) {
+  #header #header-img {
+    width: 20%;
+    min-width: 150px; }
+  #header nav {
+    width: 80%;
+    padding-right: 2px; }
+    #header nav a {
+      font-size: 15px;
+      padding: 5px; }
+
+  #video {
+    width: 80%;
+    padding: 10px;
+    padding-top: 100px; }
+
+  #mission {
+    font-size: 20px;
+    width: 80%; }
+
+  #pricing {
+    flex-direction: column; } }
+body {
+  margin: 0;
+  background-color: #dad3cd; }
+
+#header {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  background-color: #a49384; }
+  #header #header-img {
+    height: auto;
+    display: inline;
+    padding: 5px; }
+  #header nav {
+    display: inline;
+    text-align: right; }
+    #header nav a {
+      color: black;
+      text-decoration: none; }
+	</style>
 </head>
 <body>
 	<header id="header">
-		<img src="vect-typew.png" id="header-img">
+		<img id="header-img" src="http://gdurl.com/vKCe" alt="typewriters r us logo">
 		<nav id="nav-bar">
 			<a href="#aboutus" class="nav-link">About Us</a>
 			<a href="#pricing" class="nav-link">Pricing</a>
-			<a href="#form" class="nav-link">Newsletter</a>
+			<a href="#newsletter" class="nav-link">Newsletter</a>
 		</nav>
 	</header>
 
@@ -32,16 +101,28 @@
 			<h4>$999</h4>
 		</div>
 		<div class="item" id="modern">
-			<h3>Classic</h3>
+			<h3>Modern</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			<h4>$999</h4>
+			<h4>$1200</h4>
 		</div>
 		<div class="item" id="electric">
-			<h3>Classic</h3>
+			<h3>Electronic</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			<h4>$999</h4>
+			<h4>$1700</h4>
 		</div>
 	</div>
+
+	<div id="newsletter">
+		<form action="https://www.freecodecamp.com/email-submit" id="form">
+			<h2>Subscribe to our Newsletter</h2>
+			<input type="email" name="email" id="email" placeholder="janedoe@example.com">
+			<input type="submit" name="submit" id="submit">
+		</form>
+	</div>
+
+	<footer id="footer">
+		<h5>Typewriters R Us</h5>
+	</footer>
 
 </body>
 </html>

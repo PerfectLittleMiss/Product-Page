@@ -27,11 +27,17 @@ $bclr: #CCAC94;
 
 	#video {
 		width: 60%;
+		padding: 10px;
+		padding-top: 150px;
 	}
 
 	#mission {
 		font-size: 25px;
 		width: 70%;
+	}
+
+	#pricing {
+		flex-direction: row;
 	}
 }
 
@@ -56,11 +62,17 @@ $bclr: #CCAC94;
 
 	#video {
 		width: 80%;
+		padding: 10px;
+		padding-top: 100px;
 	}
 
 	#mission {
 		font-size: 20px;
 		width: 80%;
+	}
+
+	#pricing {
+		flex-direction: column;
 	}
 }
 
@@ -72,6 +84,7 @@ body {
 }
 
 #header {
+	position: fixed;
 	width: 100%;
 	margin: 0;
 	display: flex;
@@ -99,8 +112,9 @@ body {
 	height: auto;
 	margin: 0 auto;
 	display: block;
-	padding: 10px;
 	max-width: 600px;
+	position: relative;
+	z-index: -10;
 }
 
 #mission {
@@ -114,8 +128,8 @@ body {
 
 #pricing {
 	display: flex;
-	align-items: row;
 	padding: 10px;
+	text-align: center;
 }
 
 .item {
@@ -123,4 +137,61 @@ body {
 	border-radius: 5px;
 	padding: 5px;
 	margin: 5px;
+}
+
+#classic {
+	background-color: lighten(#C0C0C1, 10%);
+}
+
+#modern {
+	background-color: lighten(#88C7F3, 20%);
+}
+
+#electric {
+	background-color: lighten(#207292, 50%);
+}
+
+#newsletter {
+	width: 90%;
+	margin: 0 auto;
+	padding: 10px;
+	border: 4px solid $bclr;
+
+	#form {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+
+		#email {
+			font-size: 16px;
+			background-color: aliceblue;
+			color: darkblue;
+			border: 2px silver solid;
+		}
+
+		#submit {
+			background-color: gold;
+			color: darkblue;
+			font-size: 16px;
+			border: 2px solid silver;
+		}
+
+		#submit:hover, #email:hover {
+			font-size: 18px;
+		}
+	}
+}
+
+#footer {
+	background-color: $hbgclr;
+	padding: 15px;
+	margin: none;
+	margin-top: 15px;
+	text-align: center;
+
+	h5 {
+		font-size: 14px;
+		padding: 0;
+		margin: 0;
+	}
 }
