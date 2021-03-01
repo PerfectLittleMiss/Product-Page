@@ -36,8 +36,17 @@ $bclr: #CCAC94;
 		width: 70%;
 	}
 
-	#pricing {
-		flex-direction: row;
+	.item {
+		width: 30%;
+	}
+
+	#newsletter {
+		width: 90%;
+
+		h2 {
+			display: inline;
+			margin-right: 10px;
+		}
 	}
 }
 
@@ -47,7 +56,7 @@ $bclr: #CCAC94;
 
 		#header-img {
 			width: 20%;
-			min-width: 150px;
+			min-width: 100px;
 		}
 
 		nav {
@@ -69,10 +78,29 @@ $bclr: #CCAC94;
 	#mission {
 		font-size: 20px;
 		width: 80%;
+
+		h6 {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
 	}
 
-	#pricing {
-		flex-direction: column;
+	.item {
+		width: 70%;
+	}
+
+	#newsletter {
+		width: 80%;
+
+		h2 {
+			font-size: 1em;
+		}
+	}
+}
+
+@media (max-width: 340px) {
+	#submit {
+		margin-top: 10px;
 	}
 }
 
@@ -90,6 +118,7 @@ body {
 	display: flex;
 	align-items: center;
 	background-color: $hbgclr;
+	z-index: 10;
 
 	#header-img {
 		height: auto;
@@ -114,7 +143,6 @@ body {
 	display: block;
 	max-width: 600px;
 	position: relative;
-	z-index: -10;
 }
 
 #mission {
@@ -128,6 +156,9 @@ body {
 
 #pricing {
 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 	padding: 10px;
 	text-align: center;
 }
@@ -152,7 +183,6 @@ body {
 }
 
 #newsletter {
-	width: 90%;
 	margin: 0 auto;
 	padding: 10px;
 	border: 4px solid $bclr;
@@ -167,13 +197,15 @@ body {
 			background-color: aliceblue;
 			color: darkblue;
 			border: 2px silver solid;
+			padding: 10px;
 		}
 
 		#submit {
-			background-color: gold;
+			background-color: #B6D9CC;
 			color: darkblue;
 			font-size: 16px;
 			border: 2px solid silver;
+			padding: 10px;
 		}
 
 		#submit:hover, #email:hover {

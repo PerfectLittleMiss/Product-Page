@@ -1,10 +1,94 @@
+@media (min-width: 750px) {
+  #header #header-img {
+    width: 20%;
+    min-width: 200px;
+    max-width: 250px; }
+  #header nav {
+    width: 80%;
+    padding-right: 25px; }
+    #header nav a {
+      font-size: 23px;
+      padding: 10px; }
+
+  #video {
+    width: 60%;
+    padding: 10px;
+    padding-top: 150px; }
+
+  #mission {
+    font-size: 25px;
+    width: 70%; }
+
+  .item {
+    width: 30%; }
+
+  #newsletter {
+    width: 90%; }
+    #newsletter h2 {
+      display: inline;
+      margin-right: 10px; } }
+@media (max-width: 749px) {
+  #header #header-img {
+    width: 20%;
+    min-width: 100px; }
+  #header nav {
+    width: 80%;
+    padding-right: 2px; }
+    #header nav a {
+      font-size: 15px;
+      padding: 5px; }
+
+  #video {
+    width: 80%;
+    padding: 10px;
+    padding-top: 100px; }
+
+  #mission {
+    font-size: 20px;
+    width: 80%; }
+    #mission h6 {
+      margin-top: 10px;
+      margin-bottom: 10px; }
+
+  .item {
+    width: 70%; }
+
+  #newsletter {
+    width: 80%; }
+    #newsletter h2 {
+      font-size: 1em; } }
+@media (max-width: 340px) {
+  #submit {
+    margin-top: 10px; } }
+body {
+  margin: 0;
+  background-color: #dad3cd; }
+
+#header {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  background-color: #a49384;
+  z-index: 10; }
+  #header #header-img {
+    height: auto;
+    display: inline;
+    padding: 5px; }
+  #header nav {
+    display: inline;
+    text-align: right; }
+    #header nav a {
+      color: black;
+      text-decoration: none; }
+
 #video {
   height: auto;
   margin: 0 auto;
   display: block;
   max-width: 600px;
-  position: relative;
-  z-index: -10; }
+  position: relative; }
 
 #mission {
   margin: 0 auto;
@@ -16,6 +100,9 @@
 
 #pricing {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 10px;
   text-align: center; }
 
@@ -35,7 +122,6 @@
   background-color: #c0e3f1; }
 
 #newsletter {
-  width: 90%;
   margin: 0 auto;
   padding: 10px;
   border: 4px solid #CCAC94; }
@@ -47,12 +133,14 @@
       font-size: 16px;
       background-color: aliceblue;
       color: darkblue;
-      border: 2px silver solid; }
+      border: 2px silver solid;
+      padding: 10px; }
     #newsletter #form #submit {
-      background-color: gold;
+      background-color: #B6D9CC;
       color: darkblue;
       font-size: 16px;
-      border: 2px solid silver; }
+      border: 2px solid silver;
+      padding: 10px; }
     #newsletter #form #submit:hover, #newsletter #form #email:hover {
       font-size: 18px; }
 
